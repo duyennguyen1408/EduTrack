@@ -25,7 +25,28 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version = "2.7.0-alpha02" }
+
+compose-destinations-core = { group = "io.github.raamcosta.compose-destinations", name = "core", version = "1.9.52" }
+compose-destinations-ksp = { group = "io.github.raamcosta.compose-destinations", name = "ksp", version = "1.9.52" }
+
+room = { group = "androidx.room", name = "room-ktx", version = "2.6.1" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version = "2.6.1" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version = "2.6.1" }
+
+dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version = "2.48.1" }
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version = "2.48.1" }
+androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version = "1.2.0" }
+androidx-hilt-navigation-compose = {group="androidx.hilt", name = "hilt-navigation-compose", version="1.0.0"}
+
+androidx-compose-ui = {group="androidx.compose.ui", name = "ui-text-google-fonts", version = "1.5.3"}
+
+core-library-desugaring = {group="com.android.tools", name = "desugar_jdk_libs", version = "2.0.3" }
+
+androidx-navigation = {group = "androidx.navigation", name = "navigation-compose", version="2.6.0"}
 [plugins]
+ksp = { id = "com.google.devtools.ksp", version = "2.0.0-1.0.23" }
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+daggerHilt = { id = "com.google.dagger.hilt.android", version = "2.48.1" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version = "1.8.0" }

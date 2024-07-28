@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.daggerHilt)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
@@ -66,4 +69,24 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.androidx.lifecycle.runtime.compose)
+
+    implementation(libs.room)
+    implementation(libs.room.runtime)
+    kapt(libs.room.compiler)
+
+    implementation(libs.compose.destinations.core)
+    kapt(libs.compose.destinations.ksp)
+
+    implementation(libs.dagger.hilt.android)
+    kapt(libs.dagger.hilt.compiler)
+    kapt(libs.androidx.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
+
+    implementation(libs.androidx.navigation)
+
+    implementation(libs.androidx.compose.ui)
+
+    coreLibraryDesugaring(libs.core.library.desugaring)
 }
