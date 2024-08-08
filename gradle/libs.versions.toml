@@ -45,7 +45,7 @@ core-library-desugaring = {group="com.android.tools", name = "desugar_jdk_libs",
 
 androidx-navigation = {group = "androidx.navigation", name = "navigation-compose", version="2.6.0"}
 [plugins]
-ksp = { id = "com.google.devtools.ksp", version = "2.0.0-1.0.23" }
+ksp = { id = "com.google.devtools.ksp", version = "1.9.21-1.0.15" }
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 daggerHilt = { id = "com.google.dagger.hilt.android", version = "2.48.1" }

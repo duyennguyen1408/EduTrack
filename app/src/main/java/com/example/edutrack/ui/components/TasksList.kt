@@ -27,6 +27,7 @@ import androidx.compose.ui.unit.dp
 import com.example.edutrack.R
 import com.example.edutrack.domain.model.Task
 import com.example.edutrack.util.Priority
+import com.example.edutrack.util.changeMillisToDateString
 
 fun LazyListScope.tasksList(
     sectionTitle: String,
@@ -107,7 +108,7 @@ private fun TaskCard(
                 )
                 Spacer(modifier = Modifier.height(4.dp))
                 Text(
-                    text = "${task.dueDate}",
+                    text = task.dueDate.changeMillisToDateString(),
                     style = MaterialTheme.typography.bodySmall
                 )
             }
